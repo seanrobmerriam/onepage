@@ -1,6 +1,6 @@
 # Real-Time Number Display Application
 
-This is a simple web application that allows an administrator to set a number and displays it in real-time to users. It consists of a Node.js backend with Express and Socket.IO for real-time updates.
+This is an example web application that allows an administrator to set a number and display it in real-time to users. Node.js backend with Express and Socket.IO for real-time updates.
 
 ## Project Structure
 
@@ -16,22 +16,9 @@ real-time-number-display/
 
 ## Installation
 
-1. Create a new directory for your project
-   ```
-   mkdir real-time-number-display
-   cd real-time-number-display
-   ```
+This is for a local install—if you want to use Render, clone this repo and connect it as a web service.
 
-2. Create the necessary files with the code provided in the artifacts
-   - `server.js`
-   - `package.json`
-   - Create a `public` directory for the frontend files:
-     ```
-     mkdir public
-     ```
-   - Inside the `public` directory, create:
-     - `index.html`
-     - `admin.html`
+1. Clone this repo, or make sure yours has the correct structure as the tree above.
 
 3. Install dependencies
    ```
@@ -48,28 +35,10 @@ real-time-number-display/
 - Access the user view: `http://localhost:3000`
 - Access the admin panel: `http://localhost:3000/admin`
 
-## Features
 
-- **User View**: Displays the current number in real-time
-- **Admin Panel**:
-  - Increment/decrement buttons for easy adjustments
-  - Direct input field to set a specific number
-- **Real-time Updates**: All changes are instantly propagated to all connected users
-- **Persistent Storage**: The current number is saved to a file and restored when the server restarts
-
-## Technology Stack
+## Stack
 
 - **Backend**: Node.js with Express
-- **Real-time Communication**: Socket.IO
+- **Real-time Updates**: Socket.IO
 - **Frontend**: HTML, CSS, JavaScript
 
-## Production Considerations
-
-For a production environment, consider the following improvements:
-
-1. **Authentication**: Add user authentication to secure the admin panel
-2. **Database Storage**: Replace the file-based storage with a proper database
-3. **HTTPS**: Set up SSL certificates for secure communication
-4. **Environment Variables**: Use environment variables for configuration
-5. **Logging**: Implement proper logging with a service like Winston
-6. **Error Handling**: Add more robust error handling throughout the application
