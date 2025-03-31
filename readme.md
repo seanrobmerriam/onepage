@@ -1,6 +1,6 @@
-# Real-Time Number Display Application
+# Real-Time Number Display App
 
-This is an example web application that allows an administrator to set a number and display it in real-time to users. Node.js backend with Express and Socket.IO for real-time updates.
+This is an example web app that allows an administrator to set a number and display it in real-time to users. Node.js backend with Express and Socket.IO for real-time updates.
 
 ## Project Structure
 
